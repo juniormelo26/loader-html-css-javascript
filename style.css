@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background-color: #121212;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-1 {
+    display: none;
+    flex: 1;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.div-1 h1 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.div-2 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border-top: 3px solid orange;
+    animation: loader 1s linear infinite;
+}
+
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
