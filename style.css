@@ -1,3 +1,6 @@
+/* RESET
+*********************************************** */
+
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +8,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* DIV QUE ENGLOBA TODO CONTEUDO DA PÁGINA
+*********************************************** */
 .container {
     background-color: #121212;
     width: 100vw;
@@ -15,6 +20,8 @@
     align-items: center;
 }
 
+/* DIV-1 QUE APARECE APOŚ O CARREGAMENTO DA PAGINA
+**************************************************** */
 .div-1 {
     display: none;
     flex: 1;
@@ -22,27 +29,40 @@
     background-color: #fff;
 }
 
+/* DIV > H1 EXIBE O TEXTO APOS CARREGAMENTO
+*********************************************** */
 .div-1 h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
+/* DIV-2 (Loanding) DIV RESPONSAVEL PARA EXIBIR O LOADER
+********************************************************* */
 .div-2 {
     width: 80px;
     height: 80px;
     border-radius: 50%;
     border-top: 3px solid orange;
     animation: loader 1s linear infinite;
+    /* INSERE A ANIMAÇÃO CRIADA ABAIXO 
+        NOME DA ANIMAÇÃO: loader
+        TEMPO DE CARREGAMENTO: 1 segundo
+        TIPO DE EXIBIÇÃO: linear
+        SERÁ EXIBIDO POR QUANTO TEMPO: infinito
+    
+    */
 }
 
-
+/* AMIMAÇÃO PARA FAZER A DIV-2 QUE TEVE SUA BOSRDAS ARREDONDADAS E BORDER TOP COLORIDA */
 @keyframes loader {
     0% {
         transform: rotate(0deg);
+        /* PARTE DO PONTO ZERO COM 0 GRAUS */
     }
 
     100% {
         transform: rotate(360deg);
+        /* GIRA 360 GRAUS ATÉ O PONTO ZERO */
     }
 }
