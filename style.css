@@ -35,6 +35,26 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    transition: ease 1s;
+    animation: fade 1s ease
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px)
+    }
+
+    50% {
+        opacity: 0.5;
+        font-size: 50px;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px)
+    }
+
 }
 
 /* DIV-2 (Loanding) DIV RESPONSAVEL PARA EXIBIR O LOADER
@@ -44,6 +64,7 @@
     height: 80px;
     border-radius: 50%;
     border-top: 3px solid orange;
+
     animation: loader 1s linear infinite;
     /* INSERE A ANIMAÇÃO CRIADA ABAIXO 
         NOME DA ANIMAÇÃO: loader
